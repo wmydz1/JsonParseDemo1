@@ -167,19 +167,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int indicator_right_padding=0x7f050000;
     }
     public static final class drawable {
-        public static final int default_ptr_flip=0x7f020000;
-        public static final int default_ptr_rotate=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int indicator_arrow=0x7f020003;
-        public static final int indicator_bg_bottom=0x7f020004;
-        public static final int indicator_bg_top=0x7f020005;
-        public static final int mmd=0x7f020006;
+        public static final int btn_bg=0x7f020000;
+        public static final int default_ptr_flip=0x7f020001;
+        public static final int default_ptr_rotate=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int indicator_arrow=0x7f020004;
+        public static final int indicator_bg_bottom=0x7f020005;
+        public static final int indicator_bg_top=0x7f020006;
+        public static final int mmd=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f060016;
+        public static final int action_settings=0x7f06001a;
         public static final int both=0x7f060003;
         public static final int disabled=0x7f060004;
-        public static final int fl_inner=0x7f060011;
+        public static final int fl_inner=0x7f060015;
         public static final int flip=0x7f06000a;
         public static final int gridview=0x7f060000;
         public static final int item_iv=0x7f06000d;
@@ -192,10 +193,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int pullFromEnd=0x7f060007;
         public static final int pullFromStart=0x7f060008;
         public static final int pullUpFromBottom=0x7f060009;
-        public static final int pull_to_refresh_image=0x7f060012;
-        public static final int pull_to_refresh_progress=0x7f060013;
-        public static final int pull_to_refresh_sub_text=0x7f060015;
-        public static final int pull_to_refresh_text=0x7f060014;
+        public static final int pull_to_refresh_image=0x7f060016;
+        public static final int pull_to_refresh_progress=0x7f060017;
+        public static final int pull_to_refresh_sub_text=0x7f060019;
+        public static final int pull_to_refresh_text=0x7f060018;
+        public static final int radioGroup=0x7f060011;
+        public static final int rb1=0x7f060012;
+        public static final int rb2=0x7f060013;
+        public static final int rb3=0x7f060014;
         public static final int rotate=0x7f06000b;
         public static final int scrollview=0x7f060002;
         public static final int webview=0x7f060001;
@@ -203,8 +208,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int item=0x7f030001;
-        public static final int pull_to_refresh_header_horizontal=0x7f030002;
-        public static final int pull_to_refresh_header_vertical=0x7f030003;
+        public static final int item2=0x7f030002;
+        public static final int pull_to_refresh_header_horizontal=0x7f030003;
+        public static final int pull_to_refresh_header_vertical=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f090000;

@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
 	private MyAdapter myAdapter;
     private int mPage=1;
     private int mPageSize=10;
-	
+	private List<User> mBigList;
 	
 	
 	@Override
@@ -45,8 +45,9 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		mRequestQueue = Volley.newRequestQueue(this);
 		userlist = new ArrayList<User>();
+		mBigList = new ArrayList<User>();
 		mPullToRefreshListView = (PullToRefreshListView) findViewById(R.id.lv);
-		myAdapter = new MyAdapter(this, userlist, mRequestQueue);
+		myAdapter = new MyAdapter(this, mBigList, mRequestQueue);
 		getData(mPage, mPageSize);
 		mPullToRefreshListView.setAdapter(myAdapter);
 		mPullToRefreshListView.setMode(Mode.BOTH);
@@ -81,6 +82,10 @@ public class MainActivity extends Activity {
 				}, 2000);
 				
 			}
+			
+			
+			
+			
 		});
 	}
 
@@ -88,7 +93,7 @@ public class MainActivity extends Activity {
 	userlist.clear();
 		
 		JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
-				"http://10.17.67.146:10000/?page=" + page + "&"
+				"http://10.17.67.217:10000/?page=" + page + "&"
 						+ "pageSize=" + pageSize, new Listener<JSONArray>() {
 
 					@Override
@@ -107,6 +112,9 @@ public class MainActivity extends Activity {
 								User user = new User(id, name, time,url);
 								userlist.add(user);
 
+							}
+							if (userlist.size()>0){
+								mBigList.addAll(userlist);
 							}
                              
 							myAdapter.notifyDataSetChanged();
